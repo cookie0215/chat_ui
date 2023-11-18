@@ -1,0 +1,136 @@
+/* 상단 썸네일 부분 */
+main .thumbnail {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border-bottom: 1px solid var(--color-tertiary);
+  padding: 20px;
+}
+
+main .thumbnail-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  margin-right: 20px;
+  background-image: url("../asset/stroller.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+main .thumbnail-title {
+  font-size: var(--font-size-2);
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+main .thumbnail-price {
+  font-size: var(--font-size-2);
+  font-weight: bold;
+}
+
+
+/* 채팅창 구현 - 유저 : 본인일 때 */
+section {
+  padding: 10px 20px;
+}
+
+.my-user {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding-bottom: 20px;
+}
+
+.my-user__chat {
+  max-width: 50%;
+  background-color: var(--point-primary);
+  padding: 10px 15px;
+  border-radius: 20px 0 20px 20px;
+  color: var(--point-secondary);
+  line-height: 20px;
+}
+
+
+
+/* 채팅창 구현 - 유저 : 상대방일 때 */
+.other-user {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding-bottom: 20px;
+
+}
+
+.other-user__photo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-image: url("../asset/user_img.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  margin-right: 10px;
+}
+
+.other-user__chat {
+  max-width: 50%;
+  background-color: var(--color-tertiary);
+  padding: 10px 15px;
+  border-radius: 0 20px 20px 20px;
+  color: var(--color-primary);
+  line-height: 20px;
+}
+
+
+/* 채팅 시간 */
+.time {
+  font-size: var(--font-size-0);
+  color: var(--color-secondary);
+}
+
+.my-user__time {
+  margin-right: 8px;
+}
+
+.other-user__time {
+  margin-left: 8px;
+}
+
+
+/* 약속 확정 상자 */
+
+.promise-set__box {
+  border-radius: 5px;
+  border: 2px solid var(--color-tertiary);
+  padding: 20px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.promise-set__box .calendar {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: var(--color-primary);
+  font-size: var(--font-size-2);
+  color: var(--point-secondary);
+  text-align: center;
+  line-height: 1.5;
+  margin-right: 10px;
+}
+
+.promise-set__date {
+  font-weight: bold;
+  margin-bottom: 5px;
+  line-height: 1.7;
+
+}
+
+.res-msg {
+  text-align: center;
+  margin: 20px 0;
+  color: var(--color-secondary);
+}

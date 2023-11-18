@@ -1,0 +1,76 @@
+footer {
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
+  background-color: var(--color-tertiary);
+}
+
+.footer__wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 20px;
+}
+
+.add-btn {
+  padding: 5px;
+}
+
+.add-btn>span {
+  font-size: var(--font-size-4);
+  color: var(--color-secondary);
+}
+
+.input-msg__wrap {
+  flex: 1;
+  border-radius: 20px;
+  background-color: var(--point-secondary);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 10px;
+}
+
+.input-msg {
+  flex: 2;
+  padding: 15px;
+  border: none;
+  border-radius: 20px;
+  line-height: 10px;
+}
+
+.input-msg::placeholder {
+  color: var(--color-tertiary);
+  font-size: var(--font-size-1);
+  line-height: 1;
+}
+
+.input-msg__wrap .emotion {
+  margin-right: 10px;
+  position: relative;
+}
+
+.input-msg__wrap .emotion::after {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--point-primary);
+  position: absolute;
+  top: calc(50% - 15px);
+  right: calc(50% - 15px);
+}
+
+.input-msg__wrap span {
+  font-size: var(--font-size-4);
+  color: var(--color-secondary);
+}
+
+.send-btn {
+  padding: 5px;
+}
+
+.send-btn>span {
+  font-size: var(--font-size-4);
+  color: var(--color-secondary);
+}
